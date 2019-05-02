@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>PrimeFaces Test</title>
+    </h:head>
+    <h:body>
+
+       <div>
+                                <h:panelGrid id="testSelectOne">
+                                    <h:outputText value="selectone Menu Test"/>
+                                    <p:selectOneMenu id="selectOptions" effect="fade" var="selOne">
+                                        <f:selectItem itemLabel="Select One" itemValue="#{null}" noSelectionOption="true"/>
+                                        <f:selectItems value="#{testView.selectList}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </div>
+
+    </h:body>
+</html>
